@@ -4,7 +4,7 @@ import logo from './../../../logo.png'
 
 const Header = () => {
     return (
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
@@ -18,7 +18,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Feedback</Nav.Link>
+                        <Nav.Link href="#feedback">Feedback</Nav.Link>
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
