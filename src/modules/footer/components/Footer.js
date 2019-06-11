@@ -4,7 +4,7 @@ import { Navbar} from "react-bootstrap";
 const Footer = () => {
     return (
         <Navbar expand="lg" variant="light" bg="light">
-        © 2019, learntechpuzz. All rights reserved.
+        © 2019, LEARN TECH PUZZ. All rights reserved.
       </Navbar>
     );
 }
