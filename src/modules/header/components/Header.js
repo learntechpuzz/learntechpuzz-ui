@@ -23,10 +23,10 @@ const Header = () => {
                     </NavDropdown>
                 </Nav>
                 <Navbar.Collapse className="justify-content-center">
-    <Navbar.Text>
-      Welcome <a href="/#user">User!</a>
-    </Navbar.Text>
-  </Navbar.Collapse>
+                    <Navbar.Text>
+                        Welcome <a href="/#user">User!</a>
+                    </Navbar.Text>
+                </Navbar.Collapse>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-success">Search</Button>

@@ -14,6 +14,11 @@ class FeedbackContainer extends Component {
             event.stopPropagation();
         }
         this.setState({ validated: true });
+        const data = new FormData(event.target);
+        fetch('/feedback-confirm', {
+            method: 'POST',
+            body: data,
+          });
     }
 
     render() {
