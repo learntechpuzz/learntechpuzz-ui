@@ -14,11 +14,7 @@ class FeedbackContainer extends Component {
             event.stopPropagation();
         }
         this.setState({ validated: true });
-        const data = new FormData(event.target);
-        fetch('/feedback-confirm', {
-            method: 'POST',
-            body: data,
-          });
+        this.props.history.push('/feedback-confirm')
     }
 
     render() {
@@ -67,10 +63,10 @@ class FeedbackContainer extends Component {
                             </Form.Text>
                         </Form.Group>
                     </Form.Row>
-                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Comments</Form.Label>
-                            <Form.Control required as="textarea" rows="3" />
-                        </Form.Group>
+                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Comments</Form.Label>
+                        <Form.Control required as="textarea" rows="3" />
+                    </Form.Group>
                     <Button type="submit">Submit</Button>
                 </Form>
             </Fragment>
