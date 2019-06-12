@@ -5,7 +5,7 @@ import logo from './../../../logo.png'
 const Footer = () => {
   return (
 
-    <Navbar fixed="bottom" expand="lg" variant="light" bg="light">
+    <Navbar fixed="bottom" variant="light" bg="light">
       <Navbar.Brand href="#home">
         <img
           alt="learntechpuzz"
