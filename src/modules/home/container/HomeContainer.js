@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Courses from './../components/Courses'
 class HomeContainer extends Component{
 
     constructor(props){
@@ -11,7 +11,7 @@ class HomeContainer extends Component{
 
     render(){
         return (
-            <div>Home Page</div>
+            <Courses />
         );
     }
 }
