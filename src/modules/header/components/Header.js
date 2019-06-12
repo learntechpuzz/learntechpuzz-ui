@@ -7,9 +7,8 @@ const Header = () => {
         <Navbar fixed="top" expand="lg" variant="light" bg="light">
             <Navbar.Brand href="#home">
                 <img
-                    alt=""
+                    alt="learntechpuzz"
                     src={logo}
-                    height="30"
                     className="d-inline-block align-top"
                 />
             </Navbar.Brand>
