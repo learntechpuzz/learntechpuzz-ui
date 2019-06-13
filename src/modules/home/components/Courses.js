@@ -1,34 +1,38 @@
-import React from 'react'
-import {Carousel} from 'react-bootstrap'
+import React, { Fragment } from 'react'
+import { Card, Button, Row, Col } from 'react-bootstrap'
+import AWSCloudLogo from './../AWSCloud.png'
+import DevOpsLogo from './../DevOps.png'
 
 const Courses = () => {
     return (
-      <Carousel>
-            <Carousel.Item>
-            <img
-                className="d-block w-100"
-                data-src="holder.js/800x400?text=AWS&bg=343a40"
-                alt="AWS"
-            />
-            <Carousel.Caption>
-                <h3>Ultimate AWS Certified Solutions Architect Associate</h3>
-                <p>Complete AWS Certified Solutions Architect Associate Training!</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=DevOps&bg=343a40"
-                alt="DevOps"
-            />
-
-            <Carousel.Caption>
-                <h3>DevOps for the Absolute Beginner</h3>
-                <p>Hands On DevOps!</p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        </Carousel >
-        
+        <Fragment>
+            <Row>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={AWSCloudLogo} />
+                        <Card.Body>
+                            <Card.Title>Ultimate AWS Certified Solutions Architect Associate</Card.Title>
+                            <Card.Text>
+                                Complete AWS Certified Solutions Architect Associate Training!
+                    </Card.Text>
+                            <Button variant="primary">Enroll</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col xs={8}>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={DevOpsLogo} />
+                        <Card.Body>
+                            <Card.Title>DevOps for the Absolute Beginner, Hands on DevOps!</Card.Title>
+                            <Card.Text>
+                                Build continuous integration, continuous delivery and DevOps pipelines with Java, Maven, & Docker.
+                    </Card.Text>
+                            <Button variant="primary">Enroll</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Fragment>
     );
 }
 export default Courses;
