@@ -67,7 +67,7 @@ class FeedbackContainer extends Component {
                         <Form.Label>Comments</Form.Label>
                         <Form.Control required as="textarea" rows="3" />
                     </Form.Group>
-                    <Button type="submit" controlId="submit" >Submit</Button>
+                    <Button type="submit" id="submit" >Submit</Button>
                 </Form>
             </Fragment>
         );
