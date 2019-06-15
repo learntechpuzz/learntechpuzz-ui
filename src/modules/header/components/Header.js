@@ -19,7 +19,7 @@ const Header = () => {
                     <NavDropdown title="Action" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/#mycourses">My Courses</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
+                        <NavDropdown.Item id="feedbackLink" href="/feedback">Feedback</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Navbar.Collapse className="justify-content-center">
