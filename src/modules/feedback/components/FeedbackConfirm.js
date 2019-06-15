@@ -7,7 +7,7 @@ const FeedbackConfirm = () => {
         <Fragment>
         <h5>Feedback</h5>
         <Alert variant="success">
-            <p>Thank you very much for the valuable feedback!</p>
+            <p controlId="feedbackConfirmMsg">Thank you very much for the valuable feedback!</p>
         </Alert>
         </Fragment>
     );
