@@ -1,17 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import Courses from './../components/Courses'
-class HomeContainer extends Component{
 
-    constructor(props){
+class HomeContainer extends Component {
+
+    constructor(props) {
         super(props);
-        this.state ={
+        this.state = {
             userName: null
         }
     }
 
-    render(){
+    render() {
         return (
-            <Courses />
+                <Courses />
         );
     }
 }
