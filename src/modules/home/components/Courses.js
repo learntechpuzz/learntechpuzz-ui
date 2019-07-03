@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
-import { Card, Button, Row, Col } from 'react-bootstrap'
+import { Card, Button, Row, Col, Spinner } from 'react-bootstrap'
 import AWSCloudLogo from './../AWSCloud.png'
 import DevOpsLogo from './../DevOps.png'
 
-const Courses = () => {
+const Courses = (props) => {
     return (
         <Fragment>
             <Row>
@@ -15,7 +15,21 @@ const Courses = () => {
                             <Card.Text>
                                 Complete AWS Certified Solutions Architect Associate Training!
                     </Card.Text>
-                            <Button variant="primary">Enroll</Button>
+                    {
+                                props.loading.includes(1) ?
+                                    <Button variant="primary" disabled>
+                                        <Spinner
+                                            as="span"
+                                            animation="grow"
+                                            size="sm"
+                                            role="status"
+                                            aria-hidden="true"
+                                        />
+                                        Loading...
+                                    </Button>
+                                    : <Button variant="primary" onClick={() => props.enrollHandler(1)}>Enroll</Button>
+
+                            }
                         </Card.Body>
                     </Card>
                 </Col>
@@ -27,7 +41,21 @@ const Courses = () => {
                             <Card.Text>
                                 Build continuous integration, continuous delivery and DevOps pipelines with Java, Maven, & Docker.
                     </Card.Text>
-                            <Button variant="primary">Enroll</Button>
+                    {
+                                props.loading.includes(2) ?
+                                    <Button variant="primary" disabled>
+                                        <Spinner
+                                            as="span"
+                                            animation="grow"
+                                            size="sm"
+                                            role="status"
+                                            aria-hidden="true"
+                                        />
+                                        Loading...
+                                    </Button>
+                                    : <Button variant="primary" onClick={() => props.enrollHandler(2)}>Enroll</Button>
+
+                            }
                         </Card.Body>
                     </Card>
                 </Col>
